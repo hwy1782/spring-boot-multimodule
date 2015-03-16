@@ -13,7 +13,7 @@
     <groupId>com.hint.hong</groupId>
     <artifactId>multi-module-web</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <packaging>jar</packaging>
+    <packaging>war</packaging>
 
     <dependencies>
         <dependency>
@@ -29,6 +29,7 @@
     </dependencies>
 
     <build>
+        <finalName>multi-module</finalName>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
