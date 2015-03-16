@@ -18,11 +18,18 @@ package com.hongye;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.builder.SpringApplicationBuilder;
+import org.springframework.boot.context.web.SpringBootServletInitializer;
 import org.springframework.context.annotation.Import;
 
 @SpringBootApplication
 @Import(ServiceApplication.class)
-public class MutiModuleApplication {
+public class MutiModuleApplication extends SpringBootServletInitializer {
+
+	@Override
+	protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
+		return application.sources(MutiModuleApplication.class);
+	}
 
 	public static void main(String[] args) throws Exception {
 		SpringApplication.run(MutiModuleApplication.class, args);
