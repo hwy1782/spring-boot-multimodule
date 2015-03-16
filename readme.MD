@@ -7,8 +7,8 @@ child projects contains the following modules (from the bottom of the dependency
  2. service (service layer)
  3. web (web & rest layer)
 
- ---------------------
- run method:
+---------------------
+##how to run:##
 
  1. execute: 'mvn install' in command line at parent module
  2. execute: 'mvn spring-boot:run' in muti-module-web module
