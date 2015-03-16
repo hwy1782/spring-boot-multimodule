@@ -7,7 +7,7 @@ child projects contains the following modules (from the bottom of the dependency
  2. service (service layer)
  3. web (web & rest layer)
 
----------------------
+
 ##how to run:##
 
  1. execute: 'mvn install' in command line at parent module
