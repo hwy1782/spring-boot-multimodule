@@ -17,3 +17,8 @@ child projects contains the following modules (from the bottom of the dependency
 1. execute: 'mvn install' in command line at parent module
 2. execute: 'mvn spring-boot:run' in muti-module-web module
 3. check by accss url 'http://localhost:8080/city/get?name='
+
+## feature ##
+
+1. spring-boot with multiple modules
+2. use cobertura in spring-boot
