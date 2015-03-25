@@ -38,7 +38,7 @@ public class SampleController {
 	@RequestMapping("/get")
 	@ResponseBody
 	@Transactional(readOnly = true)
-	public List<City> helloWorld(String name) {
+	public List<City> getCity(String name) {
 		CitySearchCriteria criteria = new CitySearchCriteria(name);
 		return Lists.newArrayList(this.cityService.findCities(criteria, null).iterator());
 	}
