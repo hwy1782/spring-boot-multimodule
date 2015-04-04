@@ -21,7 +21,7 @@
     </modules>
 
     <properties>
-        <start-class>com.hongye.MutiModuleApplication</start-class>
+        <start-class>com.hongye.web.WebApplication</start-class>
     </properties>
 
     <dependencies>

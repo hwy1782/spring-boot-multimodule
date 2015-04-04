@@ -1,13 +1,17 @@
 package com.hongye.service.city;
 
+import com.google.common.collect.Lists;
 import com.hongye.domain.city.City;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Component;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.util.Assert;
 import org.springframework.util.StringUtils;
+
+import java.util.List;
 
 @Component("cityService")
 @Transactional
@@ -45,6 +49,12 @@ class CityServiceImpl implements CityService {
         Assert.notNull(name, "Name must not be null");
         Assert.notNull(country, "Country must not be null");
         return this.cityRepository.findByNameAndCountryAllIgnoringCase(name, country);
+    }
+
+    @Override
+    public List<City> cityAll() {
+        Pageable pageable = new PageRequest(0, 100);
+        return Lists.newArrayList(this.cityRepository.findAll(pageable));
     }
 
 }

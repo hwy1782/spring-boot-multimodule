@@ -27,5 +27,12 @@ public class SampleController {
         return Lists.newArrayList(this.cityService.findCities(criteria, null).iterator());
     }
 
+    @RequestMapping("/all")
+    @ResponseBody
+    @Transactional(readOnly = true)
+    public List<City> all() {
+        return cityService.cityAll();
+    }
+
 
 }
