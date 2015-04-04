@@ -1,7 +1,7 @@
-package com.hongye.web;
+package com.hongye.web.controller;
 
 import com.google.common.collect.Lists;
-import com.hongye.domain.City;
+import com.hongye.domain.city.City;
 import com.hongye.service.city.CitySearchCriteria;
 import com.hongye.service.city.CityService;
 import org.springframework.beans.factory.annotation.Autowired;

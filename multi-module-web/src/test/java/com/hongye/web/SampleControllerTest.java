@@ -1,6 +1,5 @@
 package com.hongye.web;
 
-import com.hongye.MutiModuleApplication;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -19,7 +18,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 
 
 @RunWith(SpringJUnit4ClassRunner.class)
-@SpringApplicationConfiguration(classes = MutiModuleApplication.class)
+@SpringApplicationConfiguration(classes = WebApplication.class)
 @WebAppConfiguration
 public class SampleControllerTest {
 
