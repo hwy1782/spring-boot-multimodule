@@ -14,9 +14,10 @@ child projects contains the following modules (from the bottom of the dependency
 
 ##how to run:##
 
-1. execute: 'mvn install' in command line at parent module
-2. execute: 'mvn spring-boot:run' in muti-module-web module
-3. check by accss url 'http://localhost:8080/city/get?name='
+1. execute: `mvn install` in command line at parent module
+2. execute: `mvn spring-boot:run` in muti-module-web module
+3. check by accss url `http://localhost:8080/city/get?name=`
+4. run junit test with cobertura , execute `cobertruaTest.sh`
 
 ## feature ##
 
