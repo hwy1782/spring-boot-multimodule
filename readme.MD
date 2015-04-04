@@ -23,3 +23,4 @@ child projects contains the following modules (from the bottom of the dependency
 
 1. spring-boot with multiple modules
 2. use cobertura in spring-boot
+3. collect metrics and publish to redis
