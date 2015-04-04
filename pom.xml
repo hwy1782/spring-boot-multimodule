@@ -17,6 +17,7 @@
         <module>multi-module-web</module>
         <module>multi-module-service</module>
         <module>multi-module-domain</module>
+        <module>multi-module-base</module>
     </modules>
 
     <properties>
@@ -45,6 +46,10 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-actuator</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-redis</artifactId>
         </dependency>
         <dependency>
             <groupId>com.google.guava</groupId>
