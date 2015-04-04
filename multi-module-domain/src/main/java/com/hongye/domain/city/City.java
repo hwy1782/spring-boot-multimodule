@@ -1,4 +1,4 @@
-package com.hongye.domain;
+package com.hongye.domain.city;
 
 import javax.persistence.*;
 import java.io.Serializable;

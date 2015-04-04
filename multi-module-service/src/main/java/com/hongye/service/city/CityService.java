@@ -1,6 +1,6 @@
 package com.hongye.service.city;
 
-import com.hongye.domain.City;
+import com.hongye.domain.city.City;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 
