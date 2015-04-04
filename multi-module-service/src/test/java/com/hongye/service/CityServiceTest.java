@@ -1,7 +1,8 @@
 package com.hongye.service;
 
-import com.hongye.ServiceApplication;
+
 import com.hongye.domain.City;
+import com.hongye.service.city.CityService;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
